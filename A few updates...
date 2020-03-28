@@ -1,0 +1,108 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "student-final-grade.ipynb",
+      "provenance": [],
+      "private_outputs": true,
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyOf2dSJpJr+DTTKBoJjVPfU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/optimalMachine/student-final-grade/blob/master/A%20few%20updates...\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "olpPeY_1XWRl",
+        "colab_type": "text"
+      },
+      "source": [
+        "#**Predicting Student Final Grade.**\n",
+        "\n",
+        "![](https://drive.google.com/uc?id=19jmRvmUkTtGqpXl81EARg4Dr5GiDs_kr)\n",
+        "\n",
+        "Written by Jiuk Choi\n",
+        "\n",
+        "A Python machine learning project which predicts students' final grades based on given dataset."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "dN9q1MlFWvnY",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#First import necessary libraries.\n",
+        "\n",
+        "import numpy as np\n",
+        "import pandas as pd\n",
+        "import sklearn\n",
+        "from sklearn import linear_model\n",
+        "from sklearn.utils import shuffle"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "q_wSLnnwTPrk",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#import raw data file.\n",
+        "data = pd.read_csv('https://drive.google.com/uc?id=1-l7jxDFP393GEOB1UYuEVKZ0IW5b4KeT', sep=';')\n",
+        "data.head()"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EXBXQk0O4FXf",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#Filter out some data. There are too many variables now. Plus, g3 is the final score which is \n",
+        "data = data[['G1','G2','G3','studytime','failures','absences']]\n",
+        "predict = 'g3'"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hg9NDPj_d52E",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "X= np.array"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
